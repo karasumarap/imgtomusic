@@ -1,0 +1,33 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 縦方向に要素を配置 */
+    background-image: url('../src/img/background.png'); /* 背景画像のパスを指定 */
+    background-size: cover; /* 画像を画面に合わせてカバーする */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+}
+
+.header {
+    background-color: white; /* 背景色を白に設定 */
+    padding: 20px; /* パディングを設定して文字周りにスペースを作る */
+    text-align: center; /* テキストを中央に配置 */
+    border-radius: 50%; /* ボーダーラジウスを50%に設定して楕円形にする */
+    width: 300px; /* 幅を指定 */
+}
+    
+
+
+.uploaded-image {
+    width: calc(100vw / 3);  /* 画面の幅を3分の1に設定 */
+    height: calc(100vh / 3); /* 画面の高さを3分の1に設定 */
+    object-fit: cover; /* 画像のアスペクト比を保持しつつ、指定したサイズに収まるように表示 */
+}
+
+.file-upload-button,
+.music-play-button {
+    margin-top: 20px; /* 上側に余白を設定 */
+}
